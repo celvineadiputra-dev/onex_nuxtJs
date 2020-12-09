@@ -4,6 +4,78 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+.bg-blue {
+  background-color: #0d6efd !important;
+}
+
+.bg-indigo {
+  background-color: #6610f2 !important;
+}
+
+.bg-purple {
+  background-color: #6f42c1 !important;
+}
+
+.bg-pink {
+  background-color: #d63384 !important;
+}
+
+.bg-red {
+  background-color: #dc3545 !important;
+}
+
+.bg-orange {
+  background-color: #fd7e14 !important;
+}
+
+.bg-yellow {
+  background-color: #F7C531 !important;
+}
+
+.bg-green {
+  background-color: #198754 !important;
+}
+
+.bg-teal {
+  background-color: #20c997 !important;
+}
+
+.bg-cyan {
+  background-color: #0dcaf0 !important;
+}
+
+.bg-white {
+  background-color: #fff !important;
+}
+
+.bg-gray {
+  background-color: #8B8BA5 !important;
+}
+
+.bg-gray-dark {
+  background-color: #343a40 !important;
+}
+
+@font-face {
+  font-family: "QsBold";
+  src: url("../fonts/Quicksand-Bold.ttf");
+}
+@font-face {
+  font-family: "QsLight";
+  src: url("../fonts/Quicksand-Light.ttf");
+}
+@font-face {
+  font-family: "QsMedium";
+  src: url("../fonts/Quicksand-Medium.ttf");
+}
+@font-face {
+  font-family: "QsRegular";
+  src: url("../fonts/Quicksand-Regular.ttf");
+}
+@font-face {
+  font-family: "QsSemiBold";
+  src: url("../fonts/Quicksand-SemiBold.ttf");
+}
 .align-baseline {
   vertical-align: baseline !important;
 }
@@ -238,7 +310,7 @@
 }
 
 .border-secondary {
-  border-color: #6c757d !important;
+  border-color: #8B8BA5 !important;
 }
 
 .border-success {
@@ -250,7 +322,7 @@
 }
 
 .border-warning {
-  border-color: #ffc107 !important;
+  border-color: #F7C531 !important;
 }
 
 .border-danger {
@@ -263,6 +335,10 @@
 
 .border-dark {
   border-color: #212529 !important;
+}
+
+.border-lightPink {
+  border-color: #FBE0DC !important;
 }
 
 .border-white {
@@ -1024,7 +1100,7 @@
 }
 
 .text-secondary {
-  color: #6c757d !important;
+  color: #8B8BA5 !important;
 }
 
 .text-success {
@@ -1036,7 +1112,7 @@
 }
 
 .text-warning {
-  color: #ffc107 !important;
+  color: #F7C531 !important;
 }
 
 .text-danger {
@@ -1051,6 +1127,10 @@
   color: #212529 !important;
 }
 
+.text-lightPink {
+  color: #FBE0DC !important;
+}
+
 .text-white {
   color: #fff !important;
 }
@@ -1060,7 +1140,7 @@
 }
 
 .text-muted {
-  color: #6c757d !important;
+  color: #8B8BA5 !important;
 }
 
 .text-black-50 {
@@ -1096,7 +1176,7 @@
 }
 
 .bg-secondary {
-  background-color: #6c757d !important;
+  background-color: #8B8BA5 !important;
 }
 
 .bg-success {
@@ -1108,7 +1188,7 @@
 }
 
 .bg-warning {
-  background-color: #ffc107 !important;
+  background-color: #F7C531 !important;
 }
 
 .bg-danger {
@@ -1121,6 +1201,10 @@
 
 .bg-dark {
   background-color: #212529 !important;
+}
+
+.bg-lightPink {
+  background-color: #FBE0DC !important;
 }
 
 .bg-body {
@@ -1172,20 +1256,17 @@
 
 .user-select-all {
   -webkit-user-select: all !important;
-  -moz-user-select: all !important;
-  user-select: all !important;
+          user-select: all !important;
 }
 
 .user-select-auto {
   -webkit-user-select: auto !important;
-  -moz-user-select: auto !important;
-  user-select: auto !important;
+          user-select: auto !important;
 }
 
 .user-select-none {
   -webkit-user-select: none !important;
-  -moz-user-select: none !important;
-  user-select: none !important;
+          user-select: none !important;
 }
 
 .pe-none {
@@ -4613,5 +4694,3 @@
     display: none !important;
   }
 }
-
-/*# sourceMappingURL=bootstrap-utilities.css.map */

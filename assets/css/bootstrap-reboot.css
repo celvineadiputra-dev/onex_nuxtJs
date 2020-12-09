@@ -5,6 +5,78 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
+.bg-blue {
+  background-color: #0d6efd !important;
+}
+
+.bg-indigo {
+  background-color: #6610f2 !important;
+}
+
+.bg-purple {
+  background-color: #6f42c1 !important;
+}
+
+.bg-pink {
+  background-color: #d63384 !important;
+}
+
+.bg-red {
+  background-color: #dc3545 !important;
+}
+
+.bg-orange {
+  background-color: #fd7e14 !important;
+}
+
+.bg-yellow {
+  background-color: #F7C531 !important;
+}
+
+.bg-green {
+  background-color: #198754 !important;
+}
+
+.bg-teal {
+  background-color: #20c997 !important;
+}
+
+.bg-cyan {
+  background-color: #0dcaf0 !important;
+}
+
+.bg-white {
+  background-color: #fff !important;
+}
+
+.bg-gray {
+  background-color: #8B8BA5 !important;
+}
+
+.bg-gray-dark {
+  background-color: #343a40 !important;
+}
+
+@font-face {
+  font-family: "QsBold";
+  src: url("../fonts/Quicksand-Bold.ttf");
+}
+@font-face {
+  font-family: "QsLight";
+  src: url("../fonts/Quicksand-Light.ttf");
+}
+@font-face {
+  font-family: "QsMedium";
+  src: url("../fonts/Quicksand-Medium.ttf");
+}
+@font-face {
+  font-family: "QsRegular";
+  src: url("../fonts/Quicksand-Regular.ttf");
+}
+@font-face {
+  font-family: "QsSemiBold";
+  src: url("../fonts/Quicksand-SemiBold.ttf");
+}
 *,
 *::before,
 *::after {
@@ -19,7 +91,7 @@
 
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "QsBold";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -105,10 +177,10 @@ abbr[title],
 abbr[data-bs-original-title] {
   text-decoration: underline;
   -webkit-text-decoration: underline dotted;
-  text-decoration: underline dotted;
+          text-decoration: underline dotted;
   cursor: help;
   -webkit-text-decoration-skip-ink: none;
-  text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
 }
 
 address {
@@ -254,7 +326,7 @@ table {
 caption {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  color: #6c757d;
+  color: #8B8BA5;
   text-align: left;
 }
 
@@ -425,5 +497,3 @@ progress {
 [hidden] {
   display: none !important;
 }
-
-/*# sourceMappingURL=bootstrap-reboot.css.map */

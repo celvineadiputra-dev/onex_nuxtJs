@@ -4,6 +4,78 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+.bg-blue {
+  background-color: #0d6efd !important;
+}
+
+.bg-indigo {
+  background-color: #6610f2 !important;
+}
+
+.bg-purple {
+  background-color: #6f42c1 !important;
+}
+
+.bg-pink {
+  background-color: #d63384 !important;
+}
+
+.bg-red {
+  background-color: #dc3545 !important;
+}
+
+.bg-orange {
+  background-color: #fd7e14 !important;
+}
+
+.bg-yellow {
+  background-color: #F7C531 !important;
+}
+
+.bg-green {
+  background-color: #198754 !important;
+}
+
+.bg-teal {
+  background-color: #20c997 !important;
+}
+
+.bg-cyan {
+  background-color: #0dcaf0 !important;
+}
+
+.bg-white {
+  background-color: #fff !important;
+}
+
+.bg-gray {
+  background-color: #8B8BA5 !important;
+}
+
+.bg-gray-dark {
+  background-color: #343a40 !important;
+}
+
+@font-face {
+  font-family: "QsBold";
+  src: url("../fonts/Quicksand-Bold.ttf");
+}
+@font-face {
+  font-family: "QsLight";
+  src: url("../fonts/Quicksand-Light.ttf");
+}
+@font-face {
+  font-family: "QsMedium";
+  src: url("../fonts/Quicksand-Medium.ttf");
+}
+@font-face {
+  font-family: "QsRegular";
+  src: url("../fonts/Quicksand-Regular.ttf");
+}
+@font-face {
+  font-family: "QsSemiBold";
+  src: url("../fonts/Quicksand-SemiBold.ttf");
+}
 .container,
 .container-fluid,
 .container-xxl,
@@ -4993,5 +5065,3 @@
     display: none !important;
   }
 }
-
-/*# sourceMappingURL=bootstrap-grid.css.map */

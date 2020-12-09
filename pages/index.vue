@@ -1,17 +1,16 @@
 <template>
-  <v-app>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <button class="btn btn-danger">Hello My Button</button>
-        </div>
-      </div>
-    </div>
-  </v-app>
+  <div>
+    <Hero/>
+  </div>
 </template>
 
 <script>
-export default {}
+import Hero from "@/components/Heros/index"
+export default {
+  components:{
+    Hero
+  }
+}
 </script>
 
 <style>
