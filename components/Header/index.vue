@@ -18,9 +18,9 @@
           class="collapse navbar-collapse justify-content-end"
           id="navbarNav"
         >
-          <ul class="navbar-nav align-items-center">
+          <ul class="navbar-nav align-items-center-md">
             <li class="nav-item">
-              <NuxtLink to="/" class="nav-link active" aria-current="page"
+              <NuxtLink to="/" class="nav-link active"
                 >Home</NuxtLink
               >
             </li>
@@ -40,8 +40,8 @@
               <bread-button
                 text="My Kitchen"
                 bgcolor="bg-lightPink"
+                class="ml-md-20px"
                 :style="{
-                  marginLeft: 20 + 'px',
                   width: 155 + 'px',
                   height: 50 + 'px',
                 }"

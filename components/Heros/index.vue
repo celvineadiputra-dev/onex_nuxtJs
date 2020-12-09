@@ -2,12 +2,12 @@
   <div class="container">
     <div class="row">
         <div class="col-sm-12 col-md-6 d-flex justify-content-center flex-column order-sm-1 order-md-0 order-1">
-          <h1 class="headline">
-            Eat What You Cook <br />
+          <h1 class="headline col-sm-12 col-md-10">
+            Eat What You Cook
             With Us, Together!
           </h1>
-          <p class="detailHeadline">
-            When you eat something that cooked by <br />
+          <p class="detailHeadline col-sm-12 col-md-8">
+            When you eat something that cooked by
             yourself, the happiness is priceless.
           </p>
           <bread-button
