@@ -20,14 +20,32 @@
         >
           <ul class="navbar-nav align-items-center">
             <li class="nav-item">
-              <NuxtLink to="/" class="nav-link active" aria-current="page">Home</NuxtLink>
+              <NuxtLink to="/" class="nav-link active" aria-current="page"
+                >Home</NuxtLink
+              >
             </li>
-            <li class="nav-item"><NuxtLink to="/" class="nav-link">Beverages</NuxtLink></li>
-            <li class="nav-item"><NuxtLink to="/" class="nav-link">Chef</NuxtLink></li>
-            <li class="nav-item"><NuxtLink to="/" class="nav-link">Ingredient</NuxtLink></li>
-            <li class="nav-item"><NuxtLink to="/" class="nav-link">Stories</NuxtLink></li>
             <li class="nav-item">
-              <bread-button text="My Kitchen" bgcolor="bg-lightPink" margin="20px"/>
+              <NuxtLink to="/" class="nav-link">Beverages</NuxtLink>
+            </li>
+            <li class="nav-item">
+              <NuxtLink to="/" class="nav-link">Chef</NuxtLink>
+            </li>
+            <li class="nav-item">
+              <NuxtLink to="/" class="nav-link">Ingredient</NuxtLink>
+            </li>
+            <li class="nav-item">
+              <NuxtLink to="/" class="nav-link">Stories</NuxtLink>
+            </li>
+            <li class="nav-item">
+              <bread-button
+                text="My Kitchen"
+                bgcolor="bg-lightPink"
+                :style="{
+                  marginLeft: 20 + 'px',
+                  width: 155 + 'px',
+                  height: 50 + 'px',
+                }"
+              />
             </li>
           </ul>
         </div>
@@ -40,19 +58,23 @@
 import breadButton from '../Buttons/breadButton.vue'
 export default {
   name: 'Header',
-  componets:{
-    breadButton
+  componets: {
+    breadButton,
   },
-  data(){
-    return{
-      title : 'OnexFoods'
+  data() {
+    return {
+      title: 'OnexFoods',
     }
-  }
+  },
 }
 </script>
 
 <style>
-.nav-item:nth-child(1),.nav-item:nth-child(2),.nav-item:nth-child(3),.nav-item:nth-child(4),.nav-item:nth-child(5){
+.nav-item:nth-child(1),
+.nav-item:nth-child(2),
+.nav-item:nth-child(3),
+.nav-item:nth-child(4),
+.nav-item:nth-child(5) {
   margin-right: 10px;
 }
 </style>
