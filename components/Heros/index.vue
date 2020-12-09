@@ -1,8 +1,7 @@
 <template>
   <div class="container">
     <div class="row">
-      <div class="d-flex align-items-center">
-        <div class="col-sm-12 col-md-6">
+        <div class="col-sm-12 col-md-6 d-flex justify-content-center flex-column order-sm-1 order-md-0 order-1">
           <h1 class="headline">
             Eat What You Cook <br />
             With Us, Together!
@@ -21,10 +20,9 @@
             }"
           />
         </div>
-        <div class="col-sm-12 col-md-6">
+        <div class="col-sm-12 col-md-6 order-sm-0 order-md-1 order-0">
           <img src="/video.png" alt="imageHeroChef" class="img-fluid" />
         </div>
-      </div>
     </div>
   </div>
 </template>
