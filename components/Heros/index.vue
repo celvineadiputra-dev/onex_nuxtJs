@@ -21,7 +21,7 @@
           />
         </div>
         <div class="col-sm-12 col-md-6 order-sm-0 order-md-1 order-0">
-          <img src="/video.png" alt="imageHeroChef" class="img-fluid" />
+          <img class="Sirv img-fluid" data-src="https://ouscerea.sirv.com/onexFoods/video.png?format=webp&q=50" alt="imageHeroChef" />
         </div>
     </div>
   </div>

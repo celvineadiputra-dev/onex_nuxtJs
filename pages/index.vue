@@ -25,16 +25,11 @@
       <div v-for="item in specialTryMenu" :key="item.id">
         <div class="row mt-4" v-if="menuSpecialActive == item.id">
           <div
-            class="col-md-3 col-sm-12 col-12 text-center"
+            class="col-md-3 col-sm-6 col-12 text-center"
             v-for="itemMenu in item.menu"
             :key="itemMenu.id"
           >
-            <img
-              v-bind:src="itemMenu.image"
-              :alt="itemMenu.title"
-              class="img-fluid"
-              style="width: 287px"
-            />
+          <img class="Sirv" :data-src="itemMenu.image" :alt="itemMenu.title" />
             <div>
               <span class="foodTitle">{{ itemMenu.title }}</span>
               <span class="foodChef">{{ itemMenu.chef }}</span>
@@ -62,28 +57,28 @@ export default {
           menu: [
             {
               id: 1,
-              image: '/Foods/HealthyFoods/pic2.png',
+              image: 'https://ouscerea.sirv.com/onexFoods/pic2.png?w=287&h=300&format=webp&q=50',
               title: 'Avocado Muscle1',
               chef: 'JhoneDoe',
               rating: 5,
             },
             {
               id: 2,
-              image: '/Foods/HealthyFoods/pic2.png',
+              image: 'https://ouscerea.sirv.com/onexFoods/pic2.png?w=287&h=300&format=webp&q=50',
               title: 'Avocado Muscle1',
               chef: 'JhoneDoe',
               rating: 5,
             },
             {
               id: 3,
-              image: '/Foods/HealthyFoods/pic2.png',
+              image: 'https://ouscerea.sirv.com/onexFoods/pic2.png?w=287&h=300&format=webp&q=50',
               title: 'Avocado Muscle1',
               chef: 'JhoneDoe',
               rating: 5,
             },
             {
               id: 4,
-              image: '/Foods/HealthyFoods/pic2.png',
+              image: 'https://ouscerea.sirv.com/onexFoods/pic2.png?w=287&h=300&format=webp&q=50',
               title: 'Avocado Muscle1',
               chef: 'JhoneDoe',
               rating: 5,
@@ -96,28 +91,28 @@ export default {
           menu: [
             {
               id: 1,
-              image: '/Foods/HealthyFoods/pic2.png',
+              image: 'https://ouscerea.sirv.com/onexFoods/pic2.png?w=287&h=300&format=webp&q=50',
               title: 'Avocado Muscle2',
               chef: 'JhoneDoe',
               rating: 5,
             },
             {
               id: 2,
-              image: '/Foods/HealthyFoods/pic2.png',
+              image: 'https://ouscerea.sirv.com/onexFoods/pic2.png?w=287&h=300&format=webp&q=50',
               title: 'Avocado Muscle',
               chef: 'JhoneDoe',
               rating: 5,
             },
             {
               id: 3,
-              image: '/Foods/HealthyFoods/pic2.png',
+              image: 'https://ouscerea.sirv.com/onexFoods/pic2.png?w=287&h=300&format=webp&q=50',
               title: 'Avocado Muscle',
               chef: 'JhoneDoe',
               rating: 5,
             },
             {
               id: 4,
-              image: '/Foods/HealthyFoods/pic2.png',
+              image: 'https://ouscerea.sirv.com/onexFoods/pic2.png?w=287&h=300&format=webp&q=50',
               title: 'Avocado Muscle',
               chef: 'JhoneDoe',
               rating: 5,
@@ -130,28 +125,28 @@ export default {
           menu: [
             {
               id: 1,
-              image: '/Foods/HealthyFoods/pic2.png',
+              image: 'https://ouscerea.sirv.com/onexFoods/pic2.png?w=287&h=300&format=webp&q=50',
               title: 'Avocado Muscle3',
               chef: 'JhoneDoe',
               rating: 5,
             },
             {
               id: 2,
-              image: '/Foods/HealthyFoods/pic2.png',
+              image: 'https://ouscerea.sirv.com/onexFoods/pic2.png?w=287&h=300&format=webp&q=50',
               title: 'Avocado Muscle',
               chef: 'JhoneDoe',
               rating: 5,
             },
             {
               id: 3,
-              image: '/Foods/HealthyFoods/pic2.png',
+              image: 'https://ouscerea.sirv.com/onexFoods/pic2.png?w=287&h=300&format=webp&q=50',
               title: 'Avocado Muscle',
               chef: 'JhoneDoe',
               rating: 5,
             },
             {
               id: 4,
-              image: '/Foods/HealthyFoods/pic2.png',
+              image: 'https://ouscerea.sirv.com/onexFoods/pic2.png?w=287&h=300&format=webp&q=50',
               title: 'Avocado Muscle',
               chef: 'JhoneDoe',
               rating: 5,
@@ -164,28 +159,28 @@ export default {
           menu: [
             {
               id: 1,
-              image: '/Foods/HealthyFoods/pic2.png',
+              image: 'https://ouscerea.sirv.com/onexFoods/pic2.png?w=287&h=300&format=webp&q=50',
               title: 'Avocado Muscle4',
               chef: 'JhoneDoe',
               rating: 5,
             },
             {
               id: 2,
-              image: '/Foods/HealthyFoods/pic2.png',
+              image: 'https://ouscerea.sirv.com/onexFoods/pic2.png?w=287&h=300&format=webp&q=50',
               title: 'Avocado Muscle',
               chef: 'JhoneDoe',
               rating: 5,
             },
             {
               id: 3,
-              image: '/Foods/HealthyFoods/pic2.png',
+              image: 'https://ouscerea.sirv.com/onexFoods/pic2.png?w=287&h=300&format=webp&q=50',
               title: 'Avocado Muscle',
               chef: 'JhoneDoe',
               rating: 5,
             },
             {
               id: 4,
-              image: '/Foods/HealthyFoods/pic2.png',
+              image: 'https://ouscerea.sirv.com/onexFoods/pic2.png?w=287&h=300&format=webp&q=50',
               title: 'Avocado Muscle',
               chef: 'JhoneDoe',
               rating: 5,
