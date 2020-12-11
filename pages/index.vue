@@ -9,30 +9,22 @@
         </div>
       </div>
       <div class="row mt-4">
-        <div class="col-12 d-flex justify-content-center">
-          <ul class="d-flex list-unstyled">
-            <li
-              v-for="item in specialTryMenu"
-              :key="item.id"
-              class="listSpecial"
-              v-on:click="menuSpecialActive = item.id"
-            >
+        <div class="col-6 col-md-3 text-center mt-sm-3 mt-2 cursor-pointer font-regular" v-bind:class="menuSpecialActive == item.id ? 'activeFood': ''" v-for="item in specialTryMenu"
+              :key="item.id" v-on:click="menuSpecialActive = item.id">
               {{ item.title }}
-            </li>
-          </ul>
         </div>
       </div>
       <div v-for="item in specialTryMenu" :key="item.id">
         <div class="row mt-4" v-if="menuSpecialActive == item.id">
           <div
-            class="col-md-3 col-sm-6 col-12 text-center"
+            class="col-md-3 col-sm-6 col-6 text-center"
             v-for="itemMenu in item.menu"
             :key="itemMenu.id"
           >
           <img class="Sirv" :data-src="itemMenu.image" :alt="itemMenu.title" />
             <div>
-              <span class="foodTitle">{{ itemMenu.title }}</span>
-              <span class="foodChef">{{ itemMenu.chef }}</span>
+              <span class="foodTitle text-cs-sm-15px">{{ itemMenu.title }}</span>
+              <span class="foodChef text-cs-sm-13px">{{ itemMenu.chef }}</span>
             </div>
           </div>
         </div>
@@ -50,6 +42,7 @@ export default {
   data() {
     return {
       menuSpecialActive: '1',
+      active: '1',
       specialTryMenu: [
         {
           id: 1,
@@ -213,5 +206,8 @@ h3.title {
 }
 li:not(:last-child) {
   margin-right: 2.5rem;
+}
+.font-regular{
+  font-family: 'QsRegular';
 }
 </style>

@@ -1,0 +1,20 @@
+.cursor-pointer {
+  cursor: pointer;
+}
+.activeFood {
+  position: relative;
+  font-family: 'QsBold' !important;
+  &::before {
+    content: '';
+    width: 80px;
+    min-width: 80px;
+    min-height: 2px;
+    background: $yellow;
+    position: absolute;
+    border-radius: 100px;
+    bottom: -10px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+  }
+}
