@@ -9,9 +9,14 @@
         </div>
       </div>
       <div class="row mt-4">
-        <div class="col-6 col-md-3 text-center mt-sm-3 mt-2 cursor-pointer font-regular" v-bind:class="menuSpecialActive == item.id ? 'activeFood': ''" v-for="item in specialTryMenu"
-              :key="item.id" v-on:click="menuSpecialActive = item.id">
-              {{ item.title }}
+        <div
+          class="col-6 col-md-3 text-center mt-sm-3 mt-2 cursor-pointer font-regular"
+          v-bind:class="menuSpecialActive == item.id ? 'activeFood' : ''"
+          v-for="item in specialTryMenu"
+          :key="item.id"
+          v-on:click="menuSpecialActive = item.id"
+        >
+          {{ item.title }}
         </div>
       </div>
       <div v-for="item in specialTryMenu" :key="item.id">
@@ -21,10 +26,19 @@
             v-for="itemMenu in item.menu"
             :key="itemMenu.id"
           >
-          <img class="Sirv" :data-src="itemMenu.image" :alt="itemMenu.title" />
+            <div class="skleton">
+              <img
+                class="Sirv"
+                :data-src="itemMenu.image"
+                :alt="itemMenu.title"
+              />
+            </div>
             <div>
-              <span class="foodTitle text-cs-sm-15px">{{ itemMenu.title }}</span>
+              <span class="foodTitle text-cs-sm-15px">{{
+                itemMenu.title
+              }}</span>
               <span class="foodChef text-cs-sm-13px">{{ itemMenu.chef }}</span>
+              <Love v-bind:love="itemMenu.rating" class="mt-2" />
             </div>
           </div>
         </div>
@@ -35,9 +49,11 @@
 
 <script>
 import Hero from '@/components/Heros/index'
+import Love from '@/components/Love/index'
 export default {
   components: {
     Hero,
+    Love,
   },
   data() {
     return {
@@ -50,28 +66,32 @@ export default {
           menu: [
             {
               id: 1,
-              image: 'https://ouscerea.sirv.com/onexFoods/pic(2).png?w=287&format=webp&q=50',
+              image:
+                'https://ouscerea.sirv.com/onexFoods/pic(2).png?w=287&format=webp&q=50',
               title: 'Salad Kiwi Sugga',
               chef: 'ChefLook',
-              rating: 5,
+              rating: 4,
             },
             {
               id: 2,
-              image: 'https://ouscerea.sirv.com/onexFoods/pic.png?w=287&h=300&format=webp&q=50',
+              image:
+                'https://ouscerea.sirv.com/onexFoods/pic.png?w=287&h=300&format=webp&q=50',
               title: 'Bayam Red Poppeye',
               chef: 'GoldTeamFoods',
               rating: 5,
             },
             {
               id: 3,
-              image: 'https://ouscerea.sirv.com/onexFoods/pic2.png?w=287&h=300&format=webp&q=50',
+              image:
+                'https://ouscerea.sirv.com/onexFoods/pic2.png?w=287&h=300&format=webp&q=50',
               title: 'Avocado Muscle1',
               chef: 'QuitFoods',
-              rating: 5,
+              rating: 4,
             },
             {
               id: 4,
-              image: 'https://ouscerea.sirv.com/onexFoods/pic(1).png?w=287&h=300&format=webp&q=50',
+              image:
+                'https://ouscerea.sirv.com/onexFoods/pic(1).png?w=287&h=300&format=webp&q=50',
               title: 'Naga Fruity Joss',
               chef: 'ThingFood',
               rating: 5,
@@ -84,28 +104,32 @@ export default {
           menu: [
             {
               id: 1,
-              image: 'https://ouscerea.sirv.com/onexFoods/pic2.png?w=287&h=300&format=webp&q=50',
+              image:
+                'https://ouscerea.sirv.com/onexFoods/pic2.png?w=287&h=300&format=webp&q=50',
               title: 'Avocado Muscle2',
               chef: 'JhoneDoe',
               rating: 5,
             },
             {
               id: 2,
-              image: 'https://ouscerea.sirv.com/onexFoods/pic2.png?w=287&h=300&format=webp&q=50',
+              image:
+                'https://ouscerea.sirv.com/onexFoods/pic2.png?w=287&h=300&format=webp&q=50',
               title: 'Avocado Muscle',
               chef: 'JhoneDoe',
               rating: 5,
             },
             {
               id: 3,
-              image: 'https://ouscerea.sirv.com/onexFoods/pic2.png?w=287&h=300&format=webp&q=50',
+              image:
+                'https://ouscerea.sirv.com/onexFoods/pic2.png?w=287&h=300&format=webp&q=50',
               title: 'Avocado Muscle',
               chef: 'JhoneDoe',
               rating: 5,
             },
             {
               id: 4,
-              image: 'https://ouscerea.sirv.com/onexFoods/pic2.png?w=287&h=300&format=webp&q=50',
+              image:
+                'https://ouscerea.sirv.com/onexFoods/pic2.png?w=287&h=300&format=webp&q=50',
               title: 'Avocado Muscle',
               chef: 'JhoneDoe',
               rating: 5,
@@ -118,28 +142,32 @@ export default {
           menu: [
             {
               id: 1,
-              image: 'https://ouscerea.sirv.com/onexFoods/pic2.png?w=287&h=300&format=webp&q=50',
+              image:
+                'https://ouscerea.sirv.com/onexFoods/pic2.png?w=287&h=300&format=webp&q=50',
               title: 'Avocado Muscle3',
               chef: 'JhoneDoe',
               rating: 5,
             },
             {
               id: 2,
-              image: 'https://ouscerea.sirv.com/onexFoods/pic2.png?w=287&h=300&format=webp&q=50',
+              image:
+                'https://ouscerea.sirv.com/onexFoods/pic2.png?w=287&h=300&format=webp&q=50',
               title: 'Avocado Muscle',
               chef: 'JhoneDoe',
               rating: 5,
             },
             {
               id: 3,
-              image: 'https://ouscerea.sirv.com/onexFoods/pic2.png?w=287&h=300&format=webp&q=50',
+              image:
+                'https://ouscerea.sirv.com/onexFoods/pic2.png?w=287&h=300&format=webp&q=50',
               title: 'Avocado Muscle',
               chef: 'JhoneDoe',
               rating: 5,
             },
             {
               id: 4,
-              image: 'https://ouscerea.sirv.com/onexFoods/pic2.png?w=287&h=300&format=webp&q=50',
+              image:
+                'https://ouscerea.sirv.com/onexFoods/pic2.png?w=287&h=300&format=webp&q=50',
               title: 'Avocado Muscle',
               chef: 'JhoneDoe',
               rating: 5,
@@ -152,28 +180,32 @@ export default {
           menu: [
             {
               id: 1,
-              image: 'https://ouscerea.sirv.com/onexFoods/pic2.png?w=287&h=300&format=webp&q=50',
+              image:
+                'https://ouscerea.sirv.com/onexFoods/pic2.png?w=287&h=300&format=webp&q=50',
               title: 'Avocado Muscle4',
               chef: 'JhoneDoe',
               rating: 5,
             },
             {
               id: 2,
-              image: 'https://ouscerea.sirv.com/onexFoods/pic2.png?w=287&h=300&format=webp&q=50',
+              image:
+                'https://ouscerea.sirv.com/onexFoods/pic2.png?w=287&h=300&format=webp&q=50',
               title: 'Avocado Muscle',
               chef: 'JhoneDoe',
               rating: 5,
             },
             {
               id: 3,
-              image: 'https://ouscerea.sirv.com/onexFoods/pic2.png?w=287&h=300&format=webp&q=50',
+              image:
+                'https://ouscerea.sirv.com/onexFoods/pic2.png?w=287&h=300&format=webp&q=50',
               title: 'Avocado Muscle',
               chef: 'JhoneDoe',
               rating: 5,
             },
             {
               id: 4,
-              image: 'https://ouscerea.sirv.com/onexFoods/pic2.png?w=287&h=300&format=webp&q=50',
+              image:
+                'https://ouscerea.sirv.com/onexFoods/pic2.png?w=287&h=300&format=webp&q=50',
               title: 'Avocado Muscle',
               chef: 'JhoneDoe',
               rating: 5,
@@ -207,7 +239,7 @@ h3.title {
 li:not(:last-child) {
   margin-right: 2.5rem;
 }
-.font-regular{
+.font-regular {
   font-family: 'QsRegular';
 }
 </style>
