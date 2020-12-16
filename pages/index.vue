@@ -44,176 +44,45 @@
         </div>
       </div>
     </div>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-sm-6 offset-md-3">
+          <Testimonial
+            class="pt-4"
+            image="/images/pic.png"
+            name="Camella Sarrah"
+            job="Vege Master Foods"
+            text="Awalnya saya malu dengan mertua karena tidak bisa memasak, kini mereka lebih suka makan malam di rumah demi menyantap masakan yang saya buat sendiri"
+          />
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 import Hero from '@/components/Heros/index'
 import Love from '@/components/Love/index'
+import Testimonial from '@/components/Testimonial/index'
 export default {
   components: {
     Hero,
     Love,
+    Testimonial,
   },
   data() {
     return {
       menuSpecialActive: '1',
       active: '1',
-      specialTryMenu: [
-        {
-          id: 1,
-          title: 'Healthy Food',
-          menu: [
-            {
-              id: 1,
-              image:
-                'https://ouscerea.sirv.com/onexFoods/pic(2).png?w=287&format=webp&q=50',
-              title: 'Salad Kiwi Sugga',
-              chef: 'ChefLook',
-              rating: 4,
-            },
-            {
-              id: 2,
-              image:
-                'https://ouscerea.sirv.com/onexFoods/pic.png?w=287&h=300&format=webp&q=50',
-              title: 'Bayam Red Poppeye',
-              chef: 'GoldTeamFoods',
-              rating: 5,
-            },
-            {
-              id: 3,
-              image:
-                'https://ouscerea.sirv.com/onexFoods/pic2.png?w=287&h=300&format=webp&q=50',
-              title: 'Avocado Muscle1',
-              chef: 'QuitFoods',
-              rating: 4,
-            },
-            {
-              id: 4,
-              image:
-                'https://ouscerea.sirv.com/onexFoods/pic(1).png?w=287&h=300&format=webp&q=50',
-              title: 'Naga Fruity Joss',
-              chef: 'ThingFood',
-              rating: 5,
-            },
-          ],
-        },
-        {
-          id: 2,
-          title: 'Launch',
-          menu: [
-            {
-              id: 1,
-              image:
-                'https://ouscerea.sirv.com/onexFoods/pic2.png?w=287&h=300&format=webp&q=50',
-              title: 'Avocado Muscle2',
-              chef: 'JhoneDoe',
-              rating: 5,
-            },
-            {
-              id: 2,
-              image:
-                'https://ouscerea.sirv.com/onexFoods/pic2.png?w=287&h=300&format=webp&q=50',
-              title: 'Avocado Muscle',
-              chef: 'JhoneDoe',
-              rating: 5,
-            },
-            {
-              id: 3,
-              image:
-                'https://ouscerea.sirv.com/onexFoods/pic2.png?w=287&h=300&format=webp&q=50',
-              title: 'Avocado Muscle',
-              chef: 'JhoneDoe',
-              rating: 5,
-            },
-            {
-              id: 4,
-              image:
-                'https://ouscerea.sirv.com/onexFoods/pic2.png?w=287&h=300&format=webp&q=50',
-              title: 'Avocado Muscle',
-              chef: 'JhoneDoe',
-              rating: 5,
-            },
-          ],
-        },
-        {
-          id: 3,
-          title: 'Vege Desert',
-          menu: [
-            {
-              id: 1,
-              image:
-                'https://ouscerea.sirv.com/onexFoods/pic2.png?w=287&h=300&format=webp&q=50',
-              title: 'Avocado Muscle3',
-              chef: 'JhoneDoe',
-              rating: 5,
-            },
-            {
-              id: 2,
-              image:
-                'https://ouscerea.sirv.com/onexFoods/pic2.png?w=287&h=300&format=webp&q=50',
-              title: 'Avocado Muscle',
-              chef: 'JhoneDoe',
-              rating: 5,
-            },
-            {
-              id: 3,
-              image:
-                'https://ouscerea.sirv.com/onexFoods/pic2.png?w=287&h=300&format=webp&q=50',
-              title: 'Avocado Muscle',
-              chef: 'JhoneDoe',
-              rating: 5,
-            },
-            {
-              id: 4,
-              image:
-                'https://ouscerea.sirv.com/onexFoods/pic2.png?w=287&h=300&format=webp&q=50',
-              title: 'Avocado Muscle',
-              chef: 'JhoneDoe',
-              rating: 5,
-            },
-          ],
-        },
-        {
-          id: 4,
-          title: 'Shake',
-          menu: [
-            {
-              id: 1,
-              image:
-                'https://ouscerea.sirv.com/onexFoods/pic2.png?w=287&h=300&format=webp&q=50',
-              title: 'Avocado Muscle4',
-              chef: 'JhoneDoe',
-              rating: 5,
-            },
-            {
-              id: 2,
-              image:
-                'https://ouscerea.sirv.com/onexFoods/pic2.png?w=287&h=300&format=webp&q=50',
-              title: 'Avocado Muscle',
-              chef: 'JhoneDoe',
-              rating: 5,
-            },
-            {
-              id: 3,
-              image:
-                'https://ouscerea.sirv.com/onexFoods/pic2.png?w=287&h=300&format=webp&q=50',
-              title: 'Avocado Muscle',
-              chef: 'JhoneDoe',
-              rating: 5,
-            },
-            {
-              id: 4,
-              image:
-                'https://ouscerea.sirv.com/onexFoods/pic2.png?w=287&h=300&format=webp&q=50',
-              title: 'Avocado Muscle',
-              chef: 'JhoneDoe',
-              rating: 5,
-            },
-          ],
-        },
-      ],
+      specialTryMenu: [],
     }
+  },
+  created() {
+    fetch('/data/Foods.json')
+      .then((res) => res.json())
+      .then((res) => {
+        this.specialTryMenu = res.data
+      })
   },
 }
 </script>
@@ -223,22 +92,27 @@ span.titleSpan {
   font-family: 'QsRegular';
   font-size: 20px;
 }
+
 span.foodTitle {
   display: block;
   font-family: 'QsMedium';
   font-size: 22px;
 }
+
 span.foodChef {
   display: block;
   font-family: 'QsRegular';
   font-size: 16px;
 }
+
 h3.title {
   font-size: 32px;
 }
+
 li:not(:last-child) {
   margin-right: 2.5rem;
 }
+
 .font-regular {
   font-family: 'QsRegular';
 }
