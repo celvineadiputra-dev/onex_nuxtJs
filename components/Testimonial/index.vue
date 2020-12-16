@@ -1,6 +1,6 @@
 <template>
   <div class="text-center">
-    <p>
+    <p class="text-sm-small">
       {{ text }}
     </p>
     <div class="container mt-4">
