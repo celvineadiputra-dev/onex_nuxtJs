@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
         <div class="col-sm-12 col-md-6 d-flex justify-content-center flex-column order-sm-1 order-md-0 order-1">
-          <h1 class="headline col-sm-12 col-md-10">
+          <h1 class="headline col-sm-12 col-md-10" data-aos="fade-right">
             Eat What You Cook
             With Us, Together!
           </h1>

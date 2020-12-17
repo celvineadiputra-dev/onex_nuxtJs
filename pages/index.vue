@@ -57,6 +57,13 @@
         </div>
       </div>
     </div>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-sm-12">
+          <Jumbotron :data="dataJumbotron"/>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -64,21 +71,45 @@
 import Hero from '@/components/Heros/index'
 import Love from '@/components/Love/index'
 import Testimonial from '@/components/Testimonial/index'
+import Jumbotron from '@/components/Jumbotron/index'
 export default {
   components: {
     Hero,
     Love,
     Testimonial,
+    Jumbotron
   },
   data() {
     return {
       menuSpecialActive: '1',
       active: '1',
       specialTryMenu: [],
+      dataJumbotron:[
+        {
+          id : 1,
+          number : "180.0000 +",
+          title : "Menu Foods"
+        },
+        {
+          id : 2,
+          number : "20.000 +",
+          title : "Chefs"
+        },
+        {
+          id : 3,
+          number : "40.000 +",
+          title : "Cource"
+        },
+        {
+          id : 4,
+          number : "150.000 +",
+          title : "Students"
+        },
+      ]
     }
   },
   created() {
-    fetch('/data/Foods.json')
+    fetch(process.env.baseUrl+'/data/Foods.json')
       .then((res) => res.json())
       .then((res) => {
         this.specialTryMenu = res.data

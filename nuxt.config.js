@@ -16,12 +16,16 @@ export default {
       { src: 'https://scripts.sirv.com/sirv.js' },
     ],
   },
-
+  env:{
+    baseUrl : (process.env.NODE_ENV === 'production' ? 'https://onexfood.vercel.app' : 'http://localhost:3000')
+  },
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: ['@/assets/css/style.css'],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-  plugins: [],
+  plugins: [{
+    src: '~/plugins/aos', mode: 'client'
+  }],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
