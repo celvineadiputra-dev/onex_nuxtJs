@@ -10,7 +10,7 @@
             When you eat something that cooked by
             yourself, the happiness is priceless.
             <br>
-            {{code}}
+            {{code}}.
           </p>
           <bread-button
             text="Decide a Menu"
